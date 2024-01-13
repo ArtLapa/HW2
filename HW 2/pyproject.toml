@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "helpi"
+version = "0.0.1"
+description = ""
+authors = ["ArtLapa <lapik.wot@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
