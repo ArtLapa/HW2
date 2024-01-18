@@ -11,4 +11,4 @@ WORKDIR /app
 RUN pip install poetry && poetry install
 
 # Виконуємо вашу програму при старті контейнера
-CMD ["python", "your_main_script.py"]
+CMD["python","HW_2\your_main_script.py"]
