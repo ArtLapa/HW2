@@ -1,14 +1,12 @@
-# Використовуємо базовий образ Python
-FROM python:3.8
+FROM python:3.11
 
-# Копіюємо файли проекту в контейнер
-COPY . /app
-
-# Переходимо в робочу директорію
 WORKDIR /app
 
-# Встановлюємо залежності через poetry
-RUN pip install poetry && poetry install
+COPY . .
 
-# Виконуємо вашу програму при старті контейнера
-CMD["python","HW_2\your_main_script.py"]
+RUN pip install poetry
+
+RUN poetry install
+
+CMD ["python", "HW2/Helpi.py"]
+
